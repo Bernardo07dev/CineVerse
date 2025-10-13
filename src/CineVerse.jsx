@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import './App.css'
+import Structure from './components/Structure.jsx'
+
 
 const CineVerse = () => {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <h1>Cineverse</h1>
-    </div>
+    <Structure>
+        <h1 className="text-2xl font-bold text-white">Cineverse</h1>
+    </Structure>
   )
 }
 
