@@ -45,13 +45,13 @@ const CineVerse = () => {
             <p>Carregando...</p>
           ):(
             Movie.slice(0, 3).map((item )=> (
-              <div className="px-4" key={item['#IMDB_ID']}>
-              <p>Nome Do Filme: {item['#TITLE']}</p>
-              <p>Conhecido Como: {item['#AKA']}</p>
-              <p>Atores Principais: {item['#ACTORS']}</p>
-              <p>Ano: {item['#YEAR']}</p>
-              <img className='w-[200px] ' src={item['#IMG_POSTER']}></img>
-            </div>
+              <div className="px-4 transition-opacity duration-1000 ease-in ease-out" key={item['#IMDB_ID']}>
+                <img className='w-[200px] ' src={item['#IMG_POSTER']}></img>
+                <p>Nome Do Filme: {item['#TITLE']}</p>
+                <p>Conhecido Como: {item['#AKA']}</p>
+                <p>Atores Principais: {item['#ACTORS']}</p>
+                <p>Ano: {item['#YEAR']}</p>
+              </div>
             ))
           )}
         </div>
