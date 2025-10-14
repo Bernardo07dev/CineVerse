@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import LogoPng from './assets/images/CineVerse-LogoPNG.png'
 import CampoTexto from './components/CampoTexto'
-import axios from 'axios';
+import axios from 'axios'
 
 const CineVerse = () => {
   const [Filme, SetFilme] = useState("");
@@ -36,7 +36,7 @@ const CineVerse = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[url('src/assets/images/bg-cine.png')] bg-cover pb-32 px-[5%] md:px-0">
+    <main className="min-h-screen bg-[url('public/images/bg-cine.png')] bg-cover pb-32 px-[5%] md:px-0">
       <div className='w-full fixed mb-22 z-10 py-12 md:px-12'>
             <img className='w-[10em]' src={LogoPng} alt="CineVerse Logo"></img>
       </div>
