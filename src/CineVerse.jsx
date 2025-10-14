@@ -36,19 +36,22 @@ const CineVerse = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[url('src/assets/images/bg-cine.png')] bg-cover pb-32">
-      <div className='w-full fixed z-10 py-12 px-12'>
-            <img className='w-[10%]' src={LogoPng} alt="CineVerse Logo"></img>
+    <main className="min-h-screen bg-[url('src/assets/images/bg-cine.png')] bg-cover pb-32 px-[5%] md:px-0">
+      <div className='w-full fixed mb-22 z-10 py-12 md:px-12'>
+            <img className='w-[10em]' src={LogoPng} alt="CineVerse Logo"></img>
       </div>
-      <div className="top-0 z-50 flex flex-col items-center text-white w-full pt-38">
-        <div className='flex flex-row items-center justify-center'>
-            <h1 className='text-4xl text-[#e3e3e3] font-semibold'>Olá, Bem Vindo ao</h1>
-            <img className='w-[22%]' src={LogoPng} alt="CineVerse Logo"></img>
+      <div className="top-0 z-50 flex flex-col items-center text-white w-full pt-42">
+        <div className='flex flex-row items-center justify-center mb-4'>
+            <h1 className='text-xl sm:text-2xl md:text-3xl text-[#e3e3e3] font-semibold'>Olá, Bem Vindo ao
+              <span class="font-bold ml-2 bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent">
+                CineVerse
+              </span>
+            </h1>
         </div>
-        <p className='mt-[-5px] mb-8 text-md text-[#ffffffd1]'>Encontre dados totalmente atualizados do seu filme favorito</p>
+        
         <div className='w-full flex flex-col justify-center items-center'>
-          <CampoTexto className={`transition-all duration-1000 ease-in-out text-md font-light rounded-2xl border-[1px] border-[#5454548a] backdrop-blur-md px-8 py-5 focus:outline-none bg-[#1515151e] mb-8 ${Submit ? "w-[60%]" : "w-[40%]"}`} submit={GetFilme} change={(e) => SetFilme(e.target.value)} placeholder="Digite o nome do filme aqui:"></CampoTexto>
-          <div className='w-[80%] flex flex-row justify-center items-center'>
+          <CampoTexto className={`w-full transition-all duration-1000 ease-in-out text-[0.9em] font-light rounded-2xl border-[1px] border-[#5454548a] backdrop-blur-md px-8 py-6 focus:outline-none bg-[#1515151e] mb-8 ${Submit ? "md:w-[79%]" : "md:w-[40%]"}`} submit={GetFilme} change={(e) => SetFilme(e.target.value)} placeholder="Digite o nome do filme que você quer encontrar:"></CampoTexto>
+          <div className='w-[80%] flex flex-row justify-center items-baseline'>
             {Movie === 0 ? (
               Submit && <p>Carregando...</p>
             ):(
