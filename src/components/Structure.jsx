@@ -1,6 +1,6 @@
 const Structure = ({ children }) => {
     return(
-        <div className="h-full w-full bg-red-200">
+        <div className=" text-[#979797a2] h-full w-full bg-[url('src/assets/images/bg-cine.png')] bg-contain">
             {children}
         </div>
     )
