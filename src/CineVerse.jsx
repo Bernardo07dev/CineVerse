@@ -54,7 +54,7 @@ const CineVerse = () => {
         
         <div className='w-full flex flex-col justify-center items-center'>
           <CampoTexto className={`w-full transition-all duration-1000 ease-in-out text-[0.9em] font-light rounded-2xl border-[1px] border-[#5454548a] backdrop-blur-md px-8 py-6 focus:outline-none bg-[#1515151e] mb-8 ${Submit ? "md:w-[79%]" : "md:w-[40%]"}`} submit={GetFilme} change={(e) => SetFilme(e.target.value)} placeholder="Digite o nome do filme que você quer encontrar:"></CampoTexto>
-          <div className='w-[80%] flex flex-row justify-center items-baseline'>
+          <div className='w-[80%] flex flex-col md:flex-row justify-center items-baseline'>
             {Movie === 0 ? (
               Submit && <p>Carregando...</p>
             ):(
@@ -62,7 +62,7 @@ const CineVerse = () => {
                 <div
                   key={item['#IMDB_ID']}
                   className={`
-                    rounded-2xl border-[1px] border-[#5454548a] h-full flex flex-col items-center justify-center w-[25%] mx-2 p-8 bg-gradient-to-b from-[#1D1A14] to-[#000000]
+                    rounded-2xl border-[1px] border-[#5454548a] h-full flex flex-col items-center justify-center w-full md:w-[25%] mb-8 md:mx-2 p-8 bg-gradient-to-b from-[#1D1A14] to-[#000000]
                     transition-all ease-in-out transform
                     ${Animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`
                   }
