@@ -45,7 +45,7 @@ const CineVerse = () => {
       </header>
       <div className="top-0 z-50 flex flex-col items-center text-white w-full pt-42">
         <div className='flex flex-row items-center justify-center mb-4'>
-            <h1 className='text-xl sm:text-2xl md:text-4xl text-[#e3e3e3] font-semibold'>Olá, Bem Vindo ao
+            <h1 className='text-2xl text-center sm:text-2xl md:text-4xl text-[#e3e3e3] font-semibold'>Bem Vindo ao
               <span class="font-bold ml-2 bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent">
                 CineVerse
               </span>
@@ -53,8 +53,8 @@ const CineVerse = () => {
         </div>
         
         <div className='w-full flex flex-col justify-center items-center'>
-          <CampoTexto className={`sm:w-full w-[95%] transition-all duration-1000 ease-in-out text-[0.9em] font-light rounded-2xl border-[1px] border-[#5454548a] backdrop-blur-md px-6 py-6 focus:outline-none bg-[#1515151e] mb-8 ${Submit ? "md:w-[79%]" : "md:w-[40%]"}`} submit={GetFilme} change={(e) => SetFilme(e.target.value)} placeholder="Digite o nome do filme que você quer encontrar:"></CampoTexto>
-          <div className='sm:w-[80%] w-[95%] flex flex-col md:flex-row justify-center items-baseline'>
+          <CampoTexto className={`sm:w-full w-[90%] transition-all duration-1000 ease-in-out text-[0.9em] font-light rounded-2xl border-[1px] border-[#5454548a] backdrop-blur-md px-6 py-6 focus:outline-none bg-[#1515151e] mb-8 ${Submit ? "md:w-[79%]" : "md:w-[40%]"}`} submit={GetFilme} change={(e) => SetFilme(e.target.value)} placeholder="Digite o nome do filme que você quer encontrar:"></CampoTexto>
+          <div className='sm:w-[80%] w-[90%] flex flex-col md:flex-row justify-center items-baseline'>
             {Movie === 0 ? (
               Submit && <p>Carregando...</p>
             ):(
