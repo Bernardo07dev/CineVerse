@@ -44,7 +44,7 @@ const CineVerse = () => {
             <img className='w-[10em]' src={LogoPng} alt="CineVerse Logo"></img>
       </header>
       <div className="top-0 z-50 flex flex-col items-center text-white w-full pt-42">
-        <div className='flex flex-row items-center justify-center mb-4'>
+        <div className='flex flex-row items-center justify-center sm:mx-0 mx-4 mb-4'>
             <h1 className='text-2xl text-center sm:text-2xl md:text-4xl text-[#e3e3e3] font-semibold'>Bem Vindo ao
               <span class="font-bold ml-2 bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent">
                 CineVerse
